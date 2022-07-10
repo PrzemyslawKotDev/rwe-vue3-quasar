@@ -1,5 +1,5 @@
 <template>
-<div class="flex flex-wrap justify-between materials-content">
+<div class="flex flex-wrap justify-evenly materials-content">
   <div class="filters">
     <q-option-group
       :options="options"
@@ -7,115 +7,17 @@
       v-model="group"
     />
   </div>
-  <div class="material-cards flex flex-wrap justify-between">
-    <q-card bordered class="my-card">
+  <div class="material-cards flex flex-wrap content-start justify-evenly">
+    <q-card bordered class="my-card q-mb-sm" v-for="item in group">
       <q-card-section>
         <div class="text-h6">Title</div>
       </q-card-section>
       <q-separator inset />
       <q-card-section>
-        {{group}}
+        {{item}}
       </q-card-section>
     </q-card>
-    <q-card bordered class="my-card">
-      <q-card-section>
-        <div class="text-h6">Title</div>
-      </q-card-section>
-      <q-separator inset />
-      <q-card-section>
-        {{group}}
-      </q-card-section>
-    </q-card>
-    <q-card bordered class="my-card">
-      <q-card-section>
-        <div class="text-h6">Title</div>
-      </q-card-section>
-      <q-separator inset />
-      <q-card-section>
-        {{group}}
-      </q-card-section>
-    </q-card>
-    <q-card bordered class="my-card">
-      <q-card-section>
-        <div class="text-h6">Title</div>
-      </q-card-section>
-      <q-separator inset />
-      <q-card-section>
-        {{group}}
-      </q-card-section>
-    </q-card>
-    <q-card bordered class="my-card">
-      <q-card-section>
-        <div class="text-h6">Title</div>
-      </q-card-section>
-      <q-separator inset />
-      <q-card-section>
-        {{group}}
-      </q-card-section>
-    </q-card>
-    <q-card bordered class="my-card">
-      <q-card-section>
-        <div class="text-h6">Title</div>
-      </q-card-section>
-      <q-separator inset />
-      <q-card-section>
-        {{group}}
-      </q-card-section>
-    </q-card>
-    <q-card bordered class="my-card">
-      <q-card-section>
-        <div class="text-h6">Title</div>
-      </q-card-section>
-      <q-separator inset />
-      <q-card-section>
-        {{group}}
-      </q-card-section>
-    </q-card>
-    <q-card bordered class="my-card">
-      <q-card-section>
-        <div class="text-h6">Title</div>
-      </q-card-section>
-      <q-separator inset />
-      <q-card-section>
-        {{group}}
-      </q-card-section>
-    </q-card>
-    <q-card bordered class="my-card">
-      <q-card-section>
-        <div class="text-h6">Title</div>
-      </q-card-section>
-      <q-separator inset />
-      <q-card-section>
-        {{group}}
-      </q-card-section>
-    </q-card>
-    <q-card bordered class="my-card">
-      <q-card-section>
-        <div class="text-h6">Title</div>
-      </q-card-section>
-      <q-separator inset />
-      <q-card-section>
-        {{group}}
-      </q-card-section>
-    </q-card>
-    <q-card bordered class="my-card">
-      <q-card-section>
-        <div class="text-h6">Title</div>
-      </q-card-section>
-      <q-separator inset />
-      <q-card-section>
-        {{group}}
-      </q-card-section>
-    </q-card>
-    <q-card bordered class="my-card">
-      <q-card-section>
-        <div class="text-h6">Title</div>
-      </q-card-section>
-      <q-separator inset />
-      <q-card-section>
-        {{group}}
-      </q-card-section>
-    </q-card>
+    
   </div>
 </div>
 </template>
@@ -152,5 +54,7 @@ export default {
   width: 64%
 .my-card
   width: 32%
+  height: 100%
   max-width: 200px
+  max-height: 250px
 </style>
