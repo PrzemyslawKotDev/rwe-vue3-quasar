@@ -30,7 +30,6 @@ export default {
 
 <style lang="sass" scoped>
 .my-card
-  width: 100%
   max-width: 40%
 .category
   height: 90vh

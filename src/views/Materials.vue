@@ -17,7 +17,6 @@
         {{item}}
       </q-card-section>
     </q-card>
-    
   </div>
 </div>
 </template>
